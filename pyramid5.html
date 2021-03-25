@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code 5</title>
+    </head>
+    <body>
+        <h1>Pyramid Pattern 5 by C Language</h1>
+        <hr>
+        <h3>Source Code:</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            int main()
+            {
+                int i,j,n,cnt =0, sum = 0;
+                scanf("%d", &n);
+                for(i=1;i<=n;++i){
+                    for(j=1;j<=n-i;++j){
+                        printf(".");
+                    }
+                    for(j=1;j<=i;++j){
+                        printf("*");
+                    }
+                    for(j=i-1;j>=1;--j){
+                        printf("*");
+                    }
+                    for(j=1;j<=n-i;++j){
+                        printf(".");
+                    }
+                    printf("\n");
+                }
+                for(i=n-1;i>=1;--i){
+                    for(j=1;j<=n-i;++j){
+                        printf(".");
+                    }
+                    for(j=1;j<=i;++j){
+                        printf("*");
+                    }
+                    for(j=i-1;j>=1;--j){
+                        printf("*");
+                    }
+                    for(j=1;j<=n-i;++j){
+                        printf(".");
+                    }
+                    printf("\n");
+                }
+                return 0;
+            }                                                       
+        </pre>
+        <hr>
+        <h3>Input & Output:</h3>
+        <img src="images/output5.png" height="500" width="900">
+        <p>Copyright &copy; Samia 2021</p>
+    </body>
+</html>
